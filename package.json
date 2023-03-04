@@ -1,0 +1,25 @@
+{
+  "name": "event",
+  "version": "1.0.0",
+  "description": "",
+  "main": "sever.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yumikawai-sys/https---github.com-NSCC-Winter2023-APPD5015-lab-nodejsbasics-events-yumikawai-sys.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yumikawai-sys/https---github.com-NSCC-Winter2023-APPD5015-lab-nodejsbasics-events-yumikawai-sys/issues"
+  },
+  "homepage": "https://github.com/yumikawai-sys/https---github.com-NSCC-Winter2023-APPD5015-lab-nodejsbasics-events-yumikawai-sys#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20",
+    "socket.io": "^4.5.4"
+  }
+}

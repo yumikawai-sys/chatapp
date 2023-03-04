@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Chat App</title>
+    <style>
+        .container {
+            margin: auto;
+            width: 60%;
+            border: 5px solid #000000;
+            padding: 10px;
+        }
+        #chatDisplay p {
+            font-size: 25px;
+        }
+        .bottom-panel, .bottom-panel input {
+            font-size: 25px;
+        }
+        #sendButton {
+            font-size: 22px;
+        }
+    </style>
+    <script src="https://cdn.socket.io/4.5.4/socket.io.min.js" integrity="sha384-/KNQL8Nu5gCHLqwqfQjA689Hhoqgi2S84SNUxC3roTe4EhJ9AfLkp8QiQcU8AMzI" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container" style="height: 500px;max-height: 500px;overflow-y: scroll;">
+        <div id="chatDisplay"></div>
+    </div>
+    <div class="container bottom-panel">
+        <p>Current Server Time: <span id="time-display"></span></p>
+        <p>Your Name: <input type="text" id="name" /></p>
+        <p>Your Message: <input type="text" id="message" style="width: 100%" /></p>
+        <button id='sendButton'>Send Message</button>
+    </div>
+    <script>
+        const socket = io(); // attempt to connect to server
+
+        //handle wecolem message from the server
+        socket.on('welcome', message => {
+            console.log(message);
+        })
+    </script>
+</body>
+</html>
+
